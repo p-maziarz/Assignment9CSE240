@@ -26,13 +26,13 @@ public:
     void SetPrice(float price) {
         pet_price = price;
     }
-    float GetPrice() {
+    static float GetPrice() {
         return pet_price;
     };
 private:
     string pet_name;
     int pet_weight;
-    float pet_price;
+    static float pet_price;
 };
 
 #endif //pet_hpp
