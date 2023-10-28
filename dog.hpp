@@ -1,8 +1,20 @@
-#ifndef ASSIGNMENT9_DOG_HPP
-#define ASSIGNMENT9_DOG_HPP
+#ifndef dog_hpp
+#define dog_hpp
 
+#include <string>
+#include <iostream>
+#include "pet.hpp"
 
-class dog {
+using namespace std;
+
+class dog : public pet {
+public:
+    dog();
+    dog(string name, int weight, float price);
+    void SetName(string name) {dogName = name;}
+private:
+    string dogName;
+    float price;
 
 };
 
