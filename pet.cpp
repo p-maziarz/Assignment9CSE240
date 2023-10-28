@@ -1,5 +1,13 @@
-//
-// Created by parke on 10/28/2023.
-//
-
 #include "pet.hpp"
+
+pet::pet() {
+    pet_name = " ";
+    pet_weight = 0;
+    pet_price = 0.0;
+}
+
+pet::pet(string name, int weight, float price) {
+    pet_name = name;
+    pet_weight = weight;
+    pet_price = price;
+}
