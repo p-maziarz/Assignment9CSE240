@@ -1,8 +1,12 @@
-#ifndef ASSIGNMENT9_CAT_HPP
-#define ASSIGNMENT9_CAT_HPP
+#ifndef cat_hpp
+#define cat_hpp
 
+#include <string>
+#include "pet.hpp"
 
-class cat {
+using namespace std;
+
+class cat : public pet {
 
 };
 
