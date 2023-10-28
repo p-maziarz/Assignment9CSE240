@@ -1,4 +1,5 @@
 #include "dog.hpp"
+//includes data for dog
 
 dog::dog() {
     dog_name = " ";
