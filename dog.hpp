@@ -29,11 +29,13 @@ public:
     float GetPrice() {
         return dog_price;
     }
+    static float licensing_rate;
 private:
     string dog_name;
     int dog_weight;
-    float dog_price = dog_weight*2;
-
+    float dog_price;
 };
+
+float dog::licensing_rate = 2.0; //sets the rate for dogs at $2 a pound
 
 #endif //dog_hpp
