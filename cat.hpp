@@ -28,11 +28,13 @@ public:
     float GetPrice() {
         return cat_price;
     }
+    static float licensing_rate;
 private:
     string cat_name;
     int cat_weight;
-    float cat_price = cat_weight*1.50;
-
+    float cat_price = cat_weight;
 };
+
+float cat::licensing_rate = 1.50;
 
 #endif //cat_hpp
