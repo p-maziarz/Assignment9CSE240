@@ -1,4 +1,5 @@
 #include "cat.hpp"
+//includes data for cat
 
 cat::cat() {
     cat_name = " ";
