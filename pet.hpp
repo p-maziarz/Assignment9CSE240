@@ -10,17 +10,29 @@ using namespace std;
 class pet {
 public:
     pet();
-    pet(string name, int weight);
-    void SetName(string name) {petName = name;}
-    string GetName() {return petName;}
-    void SetPrice(int weight) {price = weight;}
-    int GetPrice();
+    pet(string name, int weight, float price);
+    void SetName(string name) {
+        pet_name = name;
+    }
+    string GetName() {
+        return pet_name;
+    }
+    void SetWeight(int weight) {
+        pet_weight = weight;
+    }
+    string GetWeight() {
+        return pet_name;
+    }
+    void SetPrice(float price) {
+        pet_price = price;
+    }
+    float GetPrice() {
+        return pet_price;
+    };
 private:
-    string petName;
-    float price;
+    string pet_name;
+    int pet_weight;
+    float pet_price;
 };
 
-
-
-#endif //ASSIGNMENT9_PET_HPP
-
+#endif //pet_hpp
