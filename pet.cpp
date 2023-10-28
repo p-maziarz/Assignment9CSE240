@@ -1,4 +1,5 @@
 #include "pet.hpp"
+//includes the data from the pet file
 
 pet::pet() {
     pet_name = " ";
