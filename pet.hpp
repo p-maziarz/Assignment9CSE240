@@ -2,15 +2,17 @@
 #define pet_hpp
 
 #include <string>
-#include "dog.cpp"
-#include "cat.cpp"
 
 using namespace std;
 
 class pet {
 public:
-    pet();
-    pet(string name, int weight, float price);
+    pet(string name, int weight, float price)
+            : pet_name(name)
+            , pet_weight(weight)
+            , pet_price(price)
+    {
+    }
     void SetName(string name) {
         pet_name = name;
     }
@@ -20,19 +22,21 @@ public:
     void SetWeight(int weight) {
         pet_weight = weight;
     }
-    string GetWeight() {
-        return pet_name;
+    int GetWeight() {
+        return pet_weight;
     }
     void SetPrice(float price) {
         pet_price = price;
     }
-    static float GetPrice() {
+    float GetPrice() {
         return pet_price;
     };
+
+    virtual float CalculateFee() = 0;
 private:
     string pet_name;
     int pet_weight;
-    static float pet_price;
+    float pet_price;
 };
 
 #endif //pet_hpp
