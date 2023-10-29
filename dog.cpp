@@ -1,14 +1,3 @@
 #include "dog.hpp"
-//includes data for dog
 
-dog::dog() {
-    dog_name = " ";
-    dog_weight = 0;
-    dog_price = 0.0;
-}
-
-dog::dog(string name, int weight, float price) {
-    dog_name = name;
-    dog_weight = weight;
-    dog_price = price;
-}
+float dog::licensing_rate = 2.0; //sets the rate for dogs at $2 a pound
